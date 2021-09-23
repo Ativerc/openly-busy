@@ -1,0 +1,20 @@
+# import subprocess
+
+# command = ['lsmod', '| grep uvcvideo']
+# p = subprocess.Popen(command,shell=True, stdout=subprocess.PIPE)
+# text = p.stdout.read()
+
+# command  = subprocess.Popen('lsmod', stdout=subprocess.PIPE)
+# output = subprocess.check_output(('grep', 'uvcvideo'), stdin=command.stdout)
+
+# >>> output
+# b'uvcvideo               98304  0\nvideobuf2_vmalloc      20480  1 uvcvideo\nvideobuf2_v4l2         32768  1 uvcvideo\nvideobuf2_common       61440  2 videobuf2_v4l2,uvcvideo\nvideodev              245760  3 videobuf2_v4l2,uvcvideo,videobuf2_common\nmc                     57344  4 videodev,videobuf2_v4l2,uvcvideo,videobuf2_common\n'
+# >>> output.decode('UTF-8')
+# 'uvcvideo               98304  0\nvideobuf2_vmalloc      20480  1 uvcvideo\nvideobuf2_v4l2         32768  1 uvcvideo\nvideobuf2_common       61440  2 videobuf2_v4l2,uvcvideo\nvideodev              245760  3 videobuf2_v4l2,uvcvideo,videobuf2_common\nmc                     57344  4 videodev,videobuf2_v4l2,uvcvideo,videobuf2_common\n'
+# >>> print(output.decode('UTF-8'))
+# uvcvideo               98304  0
+# videobuf2_vmalloc      20480  1 uvcvideo
+# videobuf2_v4l2         32768  1 uvcvideo
+# videobuf2_common       61440  2 videobuf2_v4l2,uvcvideo
+# videodev              245760  3 videobuf2_v4l2,uvcvideo,videobuf2_common
+# mc                     57344  4 videodev,videobuf2_v4l2,uvcvideo,videobuf2_common
