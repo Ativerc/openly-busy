@@ -12,13 +12,15 @@ Made for and tested on a Ubuntu 20.04 system. Other OS support soon.
 
 1. Install `inotify` through `apt`:
 
-  `sudo apt install inotify-tools`
+    `sudo apt install inotify-tools`
 
 2. Have a MQTT broker running on the network. Preferably locally.
 
-You can do `sudo apt install mosquitto` to install mosquitto MQTT broker.
+    You can do `sudo apt install mosquitto` to install mosquitto MQTT broker.
 
-3. Clone this repo, make an env and install the pip dependencies.
+3. Clone this repo, make an env and install the pip dependencies using:
+
+    `pip install -r requirements.txt`
 
 # Issues:
 
