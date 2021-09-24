@@ -1,4 +1,29 @@
-# openbusylight
+# openlybusy
+This is a tool to report if you are busy on your computer. 
+
+
+Checks the Microphone/Camera usage on your computer to check if you are busy. Acts as a MQTT client to disseminate your busy status to other devices.
+
+Made for and tested on a Ubuntu 20.04 system. Other OS support soon.
+
+# Installation:
+
+## Dependencies:
+
+1. Install `inotify` through `apt`:
+
+`sudo apt install inotify-tools`
+
+2. Have a MQTT broker running on the network. Preferably locally.
+
+You can `sudo apt install mosquitto`
+
+3. Clone this repo, make an env and install the pip dependencies.
+
+# Issues:
+
+See Issues.
+
 
 ## Pseudocode?
 1. Check all of these:

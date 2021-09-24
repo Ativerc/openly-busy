@@ -23,7 +23,7 @@ def cold_run_status_check():
     command = ["cat", "/proc/asound/card0/pcm0c/sub0/status"]
     command_run  = subprocess.Popen(command, stdout=subprocess.PIPE)
     try:
-        output = subprocess.check_output(('grep', 'RUNNING'), stdin=command_run.stdout)
+        subprocess.check_output(('grep', 'RUNNING'), stdin=command_run.stdout)
         current_status = statuses[1] # Busy
         main_notifier(["Cold Run", current_status])
     except subprocess.CalledProcessError:
