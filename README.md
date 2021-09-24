@@ -12,17 +12,17 @@ Made for and tested on a Ubuntu 20.04 system. Other OS support soon.
 
 1. Install `inotify` through `apt`:
 
-`sudo apt install inotify-tools`
+  `sudo apt install inotify-tools`
 
 2. Have a MQTT broker running on the network. Preferably locally.
 
-You can `sudo apt install mosquitto`
+You can do `sudo apt install mosquitto` to install mosquitto MQTT broker.
 
 3. Clone this repo, make an env and install the pip dependencies.
 
 # Issues:
 
-See Issues.
+See [Issues](https://github.com/Ativerc/openlybusy-server/issues).
 
 
 ## Pseudocode?
