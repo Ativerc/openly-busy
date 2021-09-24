@@ -1,4 +1,4 @@
-# openlybusy
+# openlybusy-server
 This is a tool to report if you are busy on your computer. 
 
 
@@ -31,4 +31,3 @@ See Issues.
   * Meet/Teams/Zoom usage (only Teams provides an API to check if you're on a meeting yourself; only for Enterprise accounts though) THis is needed to be implemented. I would try to add Duo, WhatsApp and other apps call presence/usage as well.
   * User set variable (a software or hardware set variable which the user sets to sign that they are on a call)
 2. Report to MQTT server
-3. Change LED status
