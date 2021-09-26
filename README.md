@@ -18,7 +18,15 @@ Made for and tested on a Ubuntu 20.04 system. Other OS support soon.
 
     You can do `sudo apt install mosquitto` to install mosquitto MQTT broker.
 
-3. Clone this repo, make an env and install the pip dependencies using:
+3. Clone this repo
+
+    `git clone https://github.com/Ativerc/openlybusy-server.git`
+
+4. Make an env 
+
+    `python3 -m venv env`
+
+5. Install the pip dependencies using:
 
     `pip install -r requirements.txt`
 
