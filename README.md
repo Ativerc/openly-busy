@@ -1,5 +1,6 @@
 # openly-busy
-This is a tool to report if you are busy on your computer. 
+This is a tool to broadcast to the people around you in your home/office if you are busy working/attending meetings/videocalls on your computer. 
+
 
 **WARNING: This only works on my PC at the moment since I haven't been able to find a cross-platform library to report microphone/camera usage. If you can help me out regarding this, then please sound off in [this project's issues](https://github.com/Ativerc/openly-busy/issues)**
 
