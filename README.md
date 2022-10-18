@@ -1,6 +1,7 @@
-# openlybusy-server
+# openly-busy
 This is a tool to report if you are busy on your computer. 
 
+**WARNING: This only works on my PC at the moment since I haven't been able to find a cross-platform library to report microphone/camera usage. If you can help me out regarding this, then please sound off in [this project's issues](https://github.com/Ativerc/openly-busy/issues)**
 
 Checks the Microphone/Camera usage on your computer to check if you are busy. Acts as a MQTT client to disseminate your busy status to other devices.
 
@@ -20,7 +21,7 @@ Made for and tested on a Ubuntu 20.04 system. Other OS support soon.
 
 3. Clone this repo
 
-    `git clone https://github.com/Ativerc/openlybusy-server.git`
+    `git clone https://github.com/Ativerc/openly-busy.git`
 
 4. Make an env 
 
@@ -32,12 +33,12 @@ Made for and tested on a Ubuntu 20.04 system. Other OS support soon.
 
 # Issues:
 
-See [Issues](https://github.com/Ativerc/openlybusy-server/issues).
+See [Issues](https://github.com/Ativerc/openly-busy/issues).
 
 
 ## Pseudocode?
 1. Check all of these:
-  * mic-cam usage (this on its own is bad; if you are on a meeting and muted; someone looks at the busylight is off (because busylight is off) ; the person disturbs you
-  * Meet/Teams/Zoom usage (only Teams provides an API to check if you're on a meeting yourself; only for Enterprise accounts though) THis is needed to be implemented. I would try to add Duo, WhatsApp and other apps call presence/usage as well.
+  * mic-cam usage (this on its own is bad; if you are on a meeting and muted; busylight is hence off; the person disturbs you
+  * Meet/Teams/Zoom usage/API (only Teams provides an API to check if you're on a meeting yourself; only for Enterprise accounts though) This needs to be implemented. I would try to add Duo, WhatsApp and other apps call presence/usage as well.
   * User set variable (a software or hardware set variable which the user sets to sign that they are on a call)
 2. Report to MQTT server
