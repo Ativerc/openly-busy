@@ -43,3 +43,7 @@ See [Issues](https://github.com/Ativerc/openly-busy/issues).
   * Meet/Teams/Zoom usage/API (only Teams provides an API to check if you're on a meeting yourself; only for Enterprise accounts though) This needs to be implemented. I would try to add Duo, WhatsApp and other apps call presence/usage as well.
   * User set variable (a software or hardware set variable which the user sets to sign that they are on a call)
 2. Report to MQTT server
+
+## Ideas:
+1. Someone made an Chrome extension for checking if a person is on a google meet meeting. Only works on Chrome though.
+2. Someone made a busy-light by observing network packets. Well written code. But I feel observing mic usage will give a better check for whether if the user is busy. Say if the user is recording a video or audio, I feel monitoring mic usage would be better. 
